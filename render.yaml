@@ -5,7 +5,7 @@ services:
     plan: free
     region: ohio
     branch: main
-    repo: https://github.com/LeetBuddyAI/LeetBuddy
+    repo: https://github.com/StormReaper121/DSA-Helper
     dockerContext: .
     dockerfilePath: ./Dockerfile
     healthCheckPath: /health
