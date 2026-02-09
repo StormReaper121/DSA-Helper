@@ -289,40 +289,6 @@ VITE_VIDEO_URL=<your-cdn-video-url>
 VITE_CHROME_STORE_URL=https://chromewebstore.google.com/detail/nlemdecocfoaimdbfgpilfgdmcllhphn
 ```
 
-### Chrome Extension
-
-#### Building for Production
-
-1. **Build the extension**
-   ```bash
-   npm run build:extension
-   ```
-
-2. **Create distribution package**
-   ```bash
-   cd frontend/extension/dist
-   zip -r ../extension.zip .
-   cd ..
-   ```
-
-   This creates `frontend/extension/extension.zip`
-
-#### Extension Manifest
-
-Key settings in `frontend/extension/public/manifest.json`:
-
-```json
-{
-  "manifest_version": 3,
-  "name": "LeetBuddy",
-  "version": "1.1.2",
-  "permissions": ["activeTab", "storage"],
-  "host_permissions": ["https://leetcode.com/*"],
-  "content_security_policy": {
-    "extension_pages": "script-src 'self'; object-src 'self'"
-  }
-}
-```
 ## Acknowledgments
 
 ### Built With
